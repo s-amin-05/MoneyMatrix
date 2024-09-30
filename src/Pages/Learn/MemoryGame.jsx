@@ -1,4 +1,5 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect, useRef, } from 'react';
+import { useNavigate } from 'react-router-dom';
 import './MemoryGame.css'; // Import CSS for styling
 
 
@@ -11,6 +12,8 @@ function MemoryGame() {
     const [budgetStatus, setBudgetStatus] = useState(true)
     const [investStatus, setInvestStatus] = useState(false)
     const [stockStatus, setStockStatus] = useState(false)
+    const [gameWon, setGameWon] = useState(false);
+    const history = useNavigate();
 
     // Shuffle cards and set up the game
     useEffect(() => {
@@ -26,6 +29,9 @@ function MemoryGame() {
         firstChoice ? setSecondChoice(card) : setFirstChoice(card);
     };
 
+    const handleBack = () => {
+        history(-1);
+    };
         
 
     // Compare two selected cards
@@ -47,6 +53,14 @@ function MemoryGame() {
             }
         }
     }, [firstChoice, secondChoice]);
+
+    useEffect(() => {
+        if (cards.length && cards.every(card => card.matched)) {
+            setGameWon(true);
+        }
+    }, [cards]);
+
+
 
     useEffect(() => {
         if (budgetStatus) {
@@ -77,6 +91,13 @@ function MemoryGame() {
         setDisabled(false);
     };
 
+    // Check if the player has won
+    useEffect(() => {
+        if (cards.length && cards.every(card => card.matched)) {
+            setGameWon(true);
+        }
+    }, [cards]);
+
     return (
         <div className="memory-game ">
             
@@ -106,6 +127,9 @@ function MemoryGame() {
                     />
                 ))}
             </div>
+            <button onClick={handleBack}
+            className='bg-blue-400 text-white p-2 rounded-lg'
+            >Rage Quit?</button>
         </div>
     );
 }
@@ -119,11 +143,11 @@ function Card({ card, handleChoice, flipped, disabled }) {
 
     return (
         <div className="card" onClick={handleClick} >
-            <div className={flipped ? 'flipped' : ''}>
-                <div className="front">
+            <div className={flipped ? 'flipped' : ''} >
+                <div className="front" >
                     {card.text}
                 </div>
-                <div className="back"></div>
+                <div className="back" ></div>
             </div>
         </div>
     );
