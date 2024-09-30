@@ -1,5 +1,6 @@
 import React from 'react';
 
+
 const cardsData = [
   {
     title: 'How to deal with Unknown Risks in Life and Investing?',
@@ -48,7 +49,7 @@ const cardsData = [
   },
 ];
 
-const Cards = () => {
+const Blog = () => {
   return (
     <div className="flex flex-wrap justify-center items-center mt-10 gap-10">
       {cardsData.map((card, index) => (
@@ -76,4 +77,4 @@ const Cards = () => {
   );
 };
 
-export default Cards;
+export default Blog;

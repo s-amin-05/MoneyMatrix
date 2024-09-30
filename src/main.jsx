@@ -11,6 +11,7 @@ import BudgetSim from './Pages/Learn/BudgetSim.jsx'
 import CurrencyConverter from './Pages/Tools/CurrencyConverter.jsx'
 import EMICalculator from './Pages/Tools/EMICalculator.jsx'
 import RetirementCalculator from './Pages/Tools/RetirementCalculator.jsx'
+import Blog from './Pages/Blog.jsx'
 
 const router = createBrowserRouter(
     createRoutesFromElements(
@@ -23,6 +24,7 @@ const router = createBrowserRouter(
             <Route path='Tools/CurrencyConverter' element={<CurrencyConverter />}/>
             <Route path='Tools/EMICalc' element={<EMICalculator />}/>
             <Route path='Tools/RetirementPlanning' element={<RetirementCalculator />}/>
+            <Route path='Blog' element={<Blog />}/>
             
             
         </Route>

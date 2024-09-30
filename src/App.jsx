@@ -4,7 +4,7 @@
 import "./App.css";
 import Navbar from "./Components/Navbar";
 import { Outlet } from "react-router-dom";
-import Learn from "./Pages/Learn/Learn";
+
 
 
 function App() {
@@ -13,7 +13,7 @@ function App() {
 
         <Navbar />
         <Outlet />
-        <Cards />
+        
 
     </>
   );
