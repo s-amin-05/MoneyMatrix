@@ -27,7 +27,7 @@ const RetirementCalculator = () => {
                     type="number" 
                     value={currentAge}
                     onChange={(e) => setCurrentAge(e.target.value)}
-                    className="mb-4 p-2 rounded border border-gray-200 font-bold w-full p-3 mt-1 mb-4 rounded-lg shadow-sm focus:outline-none focus:ring focus:ring-[#a2cbe0] "
+                    className="mb-4 p-2 rounded border border-gray-300 font-bold w-full p-3 mt-1 mb-4 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring focus:ring-[#1e3d58]"
                 />
                 <label className="block text-gray-700 mb-2 font-bold">Retirement Age:</label>
                 <input

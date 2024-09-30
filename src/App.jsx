@@ -1,18 +1,17 @@
-import { useState } from 'react'
-import React from 'react'
-import RetirementCalculator from './Pages/Tools/RetirementCalculator'
-import './App.css'
-
-
+import React from "react";
+import "./App.css";
+import BudgetSim from "./Pages/Learn/BudgetSim";
+import EMICalculator from "./Pages/Tools/EMICalculator"
+import RetirementCalculator from "./Pages/Tools/RetirementCalculator";
 function App() {
-
-
   return (
     <>
-      <RetirementCalculator />
-
+      {/* <BudgetSim/> */}
+      <EMICalculator />
+      <RetirementCalculator/>
+      
     </>
-  )
+  );
 }
 
-export default App
+export default App;

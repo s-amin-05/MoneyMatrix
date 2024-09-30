@@ -1,0 +1,132 @@
+/* BudgetSim Container */
+body {
+  background-color: #e8eef1;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+.budget-sim-container {
+  font-family: Arial, sans-serif;
+  padding: 2rem;
+  max-width: 1200px; /* Restrict the width */
+  margin: 0 auto; /* Center the entire container */
+}
+
+/* Flexbox wrapper to evenly distribute space between the three sections */
+.content-wrapper {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px; /* Uniform gap between sections */
+  margin-top: 20px;
+}
+
+/* Left card styling */
+.left-card {
+  width: 30%; /* Ensure it's 30% of the available width */
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 15px;
+  border: 1px solid #96cff1;
+  border-radius: 10px;
+  background-color: #bfdff1;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional shadow for better visibility */
+}
+
+/* Cards inside the left card */
+.income,
+.assets,
+.liabilities {
+  background-color: #abd7f1;
+  padding: 15px;
+  border-radius: 8px;
+  border: 1px solid #96cff1;
+  color: #1e3d58;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* Center situation card */
+.center-situation {
+  width: 40%; /* Ensure it's 40% of the available width */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-color: #96cff1;
+  border-radius: 10px;
+  border: 1px solid #6dc0f1;
+  text-align: center;
+  color: #1e3d58;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Situation heading inside the center situation */
+.situation h2 {
+  margin-bottom: 15px;
+  font-size: 2.2rem;
+  font-weight: 600;
+  color: #1e3d58;
+}
+
+/* Right panel for buttons */
+.right-panel {
+  width: 20%; /* Ensure it's 20% of the available width */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center buttons vertically */
+  align-items: flex-start;
+  margin-left: 20px; /* Add space between the right panel and the center card */
+}
+
+/* Button styling */
+.options button {
+  width: 100%;
+  padding: 10px;
+  background-color: #43b0f1;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-bottom: 10px; /* Add space between buttons */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Button hover effect */
+.options button:hover {
+  background-color: #057dcd;
+}
+
+/* Modal styling */
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #e8eef1;
+  padding: 20px;
+  border: 1px solid #96cff1;
+  border-radius: 5px;
+}
+
+/* Modal input styling */
+.modal_content input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #96cff1;
+  border-radius: 5px;
+}
+
+/* Game over modal styling */
+.game_over {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #e8eef1;
+  padding: 20px;
+  border: 1px solid #96cff1;
+  border-radius: 5px;
+  text-align: center;
+  color: #1e3d58;
+}
