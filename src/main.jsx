@@ -12,6 +12,7 @@ import CurrencyConverter from './Pages/Tools/CurrencyConverter.jsx'
 import EMICalculator from './Pages/Tools/EMICalculator.jsx'
 import RetirementCalculator from './Pages/Tools/RetirementCalculator.jsx'
 import Blog from './Pages/Blog.jsx'
+import IncomeBracketPage from './Pages/Learn/IncomeBracketPage'
 
 const router = createBrowserRouter(
     createRoutesFromElements(
