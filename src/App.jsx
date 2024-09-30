@@ -3,7 +3,8 @@ import './App.css'
 import Navbar from './Components/Navbar'
 import { Outlet } from 'react-router-dom'
 import CurrencyConverter from './Pages/Tools/CurrencyConverter'
-import Cards from './Pages/Cards'
+import Community from './Pages/Community/Community'
+import Cards from './Pages/Blogs'
 
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
         <Navbar />
         <CurrencyConverter />
         <Outlet />
+        <Community/>
         <Cards />
 
     </>
