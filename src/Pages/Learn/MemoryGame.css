@@ -1,23 +1,45 @@
+#root{
+    margin: 0;
+    padding: 0;
+    
+}
+
 .memory-game {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 50px;
+    
+    width: 100%;
+    padding: 0;
+    box-sizing: border-box;
+    
 }
 
 .card-grid {
+    
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 10px;
+    width: 100%; /* Ensure grid takes full width */
+    max-width: 400px; 
+    margin: 0 auto;
+    place-items: center;
 }
 
 .card {
     position: relative;
+    right: 50%;
+    bottom: 50%;
     width: 100px;
     height: 100px;
-    perspective: 1000px;
+    /* perspective: 1000px; */
     cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+
+
 
 .card .flipped .front {
     transform: rotateY(0deg);

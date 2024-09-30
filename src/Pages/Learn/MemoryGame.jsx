@@ -78,7 +78,8 @@ function MemoryGame() {
     };
 
     return (
-        <div className="memory-game">
+        <div className="memory-game ">
+            
             <h1>Memory Card Game</h1>
             <form >
                 <input type="checkbox" id='budget' name='budget' checked={budgetStatus} onChange={()=> {
