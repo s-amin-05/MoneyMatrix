@@ -11,6 +11,7 @@ const sitStat = [
   "Upon waking up, you discover the fridge has ceased functioning, leaving your food at risk of spoiling. The repair cost would be around Rs. 5000. What will you do?",
 ];
 
+
 const sitOpt = [
   "Save", // For saving plan
   "Save", // For bonus paycheck
