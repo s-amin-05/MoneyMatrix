@@ -3,7 +3,9 @@ import React from 'react'
 function Home() {
     return (
         <>
-            Home
+            <div className='flex items-center '>
+                
+            </div>
         </>
 
     )
