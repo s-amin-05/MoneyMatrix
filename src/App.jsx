@@ -2,13 +2,15 @@ import "./App.css";
 import Navbar from "./Components/Navbar";
 import { Outlet } from "react-router-dom";
 import Learn from "./Pages/Learn/Learn";
-import StockTracker from "./Pages/Tools/StockTracker";
+import StockGraph from "./Pages/Learn/StockGraph";
+import StockMarketSimulation from "./Pages/Learn/StockMarketSimulation";
 
 function App() {
   return (
     <>
       <Navbar />
-      <Learn />
+      {/* <Learn /> */}
+      <StockMarketSimulation />
       <Outlet />
     </>
   );

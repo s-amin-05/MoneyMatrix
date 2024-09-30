@@ -1,0 +1,70 @@
+/* Styling the stock input form similar to the memory card game */
+
+.input-container {
+  background-color: #96cff1; /* Match background color */
+  border-radius: 10px;
+  padding: 30px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  width: 500px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.input-container h2 {
+  color: #1e3d58; /* Match text color */
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.input-container p {
+  color: #1e3d58;
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.input-field {
+  background-color: #bfdff1;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 15px;
+  width: 80%;
+  font-size: 1.2rem;
+}
+
+select.input-field {
+  background-color: #bfdff1;
+}
+
+button {
+  background-color: #43b0f1;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  color: white;
+  cursor: pointer;
+  margin: 10px;
+}
+
+button:hover {
+  background-color: #1e3d58;
+}
+
+button:focus {
+  outline: none;
+}
+
+.compare-btn {
+  background-color: #43b0f1;
+  font-size: 1.2rem;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  margin-top: 20px;
+}
+
+.compare-btn:hover {
+  background-color: #057dcd;
+}
