@@ -1,28 +1,4 @@
-// import React from 'react';
 
-// const Page1 = () => {
-//   return (
-//     <div className="max-w-4xl mx-auto my-10 p-5">
-//       <h1 className="text-3xl font-bold text-gray-800 mb-5">
-//         How to Deal with Unknown Risks in Life and Investing?
-//       </h1>
-//       <p className="text-lg text-gray-600 leading-relaxed">
-//         Life and investing come with various risks, many of which are unpredictable.
-//         In this article, we'll cover strategies for managing uncertainty. These include
-//         diversifying your portfolio, creating emergency savings, and understanding market
-//         conditions to mitigate the impact of sudden changes. The key to handling unknown
-//         risks is to stay informed, build a solid financial foundation, and never panic during
-//         volatile periods.
-//       </p>
-//       <p className="text-lg text-gray-600 leading-relaxed mt-4">
-//         Learn how insurance, risk management techniques, and the concept of “margin of
-//         safety” can also protect you from unpredictable events in your financial life.
-//       </p>
-//     </div>
-//   );
-// };
-
-// export default Page1;
 import React from "react";
 
 const Page1 = () => {
