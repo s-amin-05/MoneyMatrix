@@ -22,7 +22,7 @@ const cardsData = [
 const Home = () => {
   return (
     <>
-      <div className="min-h-screen bg-gradient-to-b from-[#43b0f1] to-[#e8eef1] flex items-center justify-between p-12 text-white">
+      <div className="min-h-screen bg-gradient-to-b  flex items-center justify-between p-12 text-white">
         {/* Hero Section */}
         <section className="max-w-lg">
           <h1 className="text-5xl font-bold">Say 👋 to MoneyMatrix</h1>

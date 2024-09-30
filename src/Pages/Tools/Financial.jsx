@@ -229,14 +229,15 @@ const FinancialEducationRoadmap = () => {
     };
 
     return (
-        <div className="roadmap-container mt-10 max-w-5xl mx-auto p-10 bg-white rounded-lg shadow-md">
-            <h1 className="text-2xl font-semibold text-center mb-8 text-[#1e3d58]">Financial Education Roadmap</h1>
+        <div className="roadmap-container mt-10 max-w-5xl mx-auto p-10 bg-white rounded-lg shadow-md pb-10">
+            <h1 className="text-2xl font-semibold text-center mb-8 text-[#1e3d58q
+            ]">Financial Education Roadmap</h1>
             <div className="roadmap">
                 {roadmapStages.map((stage) => (
                     <div key={stage.step} className="roadmap-stage mb-6">
                         <div
                             onClick={() => toggleSection(stage.step)}
-                            className="cursor-pointer bg-[#1e3d58] text-white p-3 rounded-lg shadow-sm hover:bg-[#0f2c3e] transition-colors duration-300"
+                            className="cursor-pointer bg-[#386c9b] text-white p-3 rounded-lg shadow-sm hover:bg-[#0f2c3e] transition-colors duration-300"
                         >
                             <h2 className="text-lg font-medium">
                                 Step {stage.step}: {stage.title}
@@ -257,7 +258,7 @@ const FinancialEducationRoadmap = () => {
                                 ></iframe>
                                 <button
                                     onClick={() => toggleQuiz(stage.step)}
-                                    className="mt-4 p-2 bg-[#1e3d58] text-white rounded-lg"
+                                    className="mt-4 p-2 bg-[#386c9b] text-white rounded-lg"
                                 >
                                     {quizOpen[stage.step] ? "Hide Quiz" : "Take Quiz"}
                                 </button>
@@ -291,7 +292,7 @@ const FinancialEducationRoadmap = () => {
                                         ))}
                                         <button
                                             onClick={() => handleQuizSubmit(stage.step)}
-                                            className="mt-4 p-2 bg-[#1e3d58] text-white rounded-lg"
+                                            className="mt-4 p-2 bg-[#386c9b] text-white rounded-lg "
                                         >
                                             Submit Quiz
                                         </button>

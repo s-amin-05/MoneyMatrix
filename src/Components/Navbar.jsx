@@ -5,7 +5,7 @@ import { Link, NavLink } from 'react-router-dom'
 function Navbar() {
   
   return (
-      <div className={`mt-0 bg-black flex items-center justify-around text-white h-14 overflow-hidden w-screen`} 
+      <div className={`mt-0 bg-[#43b0f1] flex items-center justify-around text-white h-14 overflow-hidden w-screen`} 
       >
         <div className='flex'>
             Logo 
@@ -19,7 +19,7 @@ function Navbar() {
               className={({isActive})=>(
               `${isActive? `text-contrastColor`: `text-white`}`
               )}>
-              Home
+              Home🏠
             </NavLink>
           </li>
 
@@ -28,7 +28,9 @@ function Navbar() {
           className={({isActive})=>(
             `${isActive? `text-contrastColor`: `text-white`}`
             )}>
-              Tools
+              Tools🔧
+
+
           </NavLink>
           </li>
 
@@ -37,7 +39,7 @@ function Navbar() {
           className={({isActive})=>(
             `${isActive? `text-contrastColor`: `text-white`}`
             )}>
-              Learn
+              Learn📖
           </NavLink>
           </li>
           <li>
@@ -45,7 +47,8 @@ function Navbar() {
               className={({isActive})=>(
               `${isActive? `text-contrastColor`: `text-white`}`
               )}>
-              Modules
+              Modules🛣
+
             </NavLink>
           </li>
 
@@ -54,7 +57,8 @@ function Navbar() {
           className={({isActive})=>(
             `${isActive? `text-contrastColor`: `text-white`}`
             )}>
-              Blog
+              Blog📰
+
           </NavLink>
           </li>
 

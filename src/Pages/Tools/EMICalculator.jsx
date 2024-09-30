@@ -30,7 +30,7 @@ const EMICalculator = () => {
   };
 
   return (
-    <div className="emi-calculator mt-20 max-w-xl mx-auto bg-[#96cff1] p-5 rounded-lg shadow-md">
+    <div className="emi-calculator mt-20 max-w-xl mx-auto bg-[#96cff1] p-5 rounded-lg shadow-xl">
       <h2 className="text-3xl font-semibold text-left">EMI Calculator</h2>
       <form onSubmit={calculateEMI}>
         <div className="form-group">

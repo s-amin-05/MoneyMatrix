@@ -96,7 +96,7 @@ function InputBox({
 
   return (
     <div className={`bg-white p-3 rounded-lg flex ${className}`}>
-      <div className="w-full">
+      <div className="w-auto">
         <label
           htmlFor={amountInputId}
           className="block text-gray-700 mb-2 font-medium"

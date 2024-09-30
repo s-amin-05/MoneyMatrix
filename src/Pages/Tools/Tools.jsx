@@ -9,7 +9,7 @@ function Tools() {
         <>
             <RetirementCalculator />
             <EMICalculator />
-            <CurrencyConverter />
+            {/* <CurrencyConverter /> */}
             <Investment/>
             
         </>

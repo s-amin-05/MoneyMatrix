@@ -5,7 +5,7 @@
   display: flex;
   justify-content: center; /* Horizontally center the container */
   align-items: center; /* Vertically center the container */
-  background-color: #e8eef1;
+  /* background-color: #e8eef1; */
   padding: 20px; /* Add padding */
   box-sizing: border-box; /* Include padding in the element's width */
 }

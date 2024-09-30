@@ -5,7 +5,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #e8eef1;
+  /* background-color: #e8eef1; */
 }
 h3 b {
   font-size: 20px;
@@ -85,7 +85,7 @@ h3 b {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #e8eef1;
+  /* background-color: #e8eef1; */
 }
 
 /* Container for the content */
