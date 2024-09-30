@@ -1,0 +1,77 @@
+/* Wrapper for the StartPage */
+.startpage-wrapper {
+  width: 100vw; /* Full width of the viewport */
+  min-height: 100vh; /* Full height of the viewport */
+  display: flex;
+  justify-content: center; /* Horizontally center the container */
+  align-items: center; /* Vertically center the container */
+  background-color: #e8eef1;
+  padding: 20px; /* Add padding */
+  box-sizing: border-box; /* Include padding in the element's width */
+}
+
+/* Container for the StartPage content */
+.startpage-container {
+  background-color: #abd7f1;
+  border-radius: 8px;
+  padding: 2rem;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border: 1px solid #96cff1;
+  color: #1e3d58;
+  width: 50%; /* Reduced width */
+  max-width: 600px; /* Set maximum width for larger screens */
+}
+
+/* Welcome Text styling */
+.startpage-container h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #1e3d58;
+}
+
+/* Subtitle text */
+.startpage-container p {
+  font-size: 1.25rem;
+  margin-bottom: 1.5rem;
+  color: #1e3d58;
+}
+
+/* Button container */
+.button-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+/* Back button styling */
+.button-back {
+  background-color: #43b0f1;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.25rem;
+  transition: background-color 0.3s ease;
+}
+
+.button-back:hover {
+  background-color: #057dcd;
+}
+
+/* Start Game button styling */
+.button-start {
+  background-color: #43b0f1;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.25rem;
+  transition: background-color 0.3s ease;
+}
+
+.button-start:hover {
+  background-color: #057dcd;
+}

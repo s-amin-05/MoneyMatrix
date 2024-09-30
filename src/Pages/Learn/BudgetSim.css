@@ -129,3 +129,60 @@ body {
   color: #1e3d58;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow for visibility */
 }
+
+/* Modal styling (Updated for theme consistency) */
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #abd7f1; /* Use same background as cards */
+  padding: 20px;
+  border: 1px solid #96cff1; /* Same border as the other elements */
+  border-radius: 8px; /* Same radius as other elements */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Same shadow as the other elements */
+  text-align: center; /* Center the text in the modal */
+  color: #1e3d58; /* Text color consistent with theme */
+}
+
+/* Modal input styling (keeps the input consistent with the theme) */
+.modal_content input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #96cff1; /* Border color consistent with theme */
+  border-radius: 5px; /* Match the input styling */
+  font-size: 1rem; /* Consistent input text size */
+  color: #1e3d58; /* Text color inside the input */
+}
+
+/* Modal button styling (optional, if you have buttons inside the modal) */
+.modal_content button {
+  background-color: #43b0f1; /* Use button theme color */
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  margin: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.modal_content button:hover {
+  background-color: #057dcd; /* Hover effect for buttons */
+}
+
+/* Game over modal styling (same theme) */
+.game_over {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #abd7f1; /* Consistent background color */
+  padding: 20px;
+  border: 1px solid #96cff1; /* Consistent border color */
+  border-radius: 5px;
+  text-align: center;
+  color: #1e3d58; /* Consistent text color */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Consistent shadow */
+}
