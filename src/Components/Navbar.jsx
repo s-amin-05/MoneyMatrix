@@ -40,6 +40,14 @@ function Navbar() {
               Learn
           </NavLink>
           </li>
+          <li>
+            <NavLink to={'/Modules'} 
+              className={({isActive})=>(
+              `${isActive? `text-contrastColor`: `text-white`}`
+              )}>
+              Modules
+            </NavLink>
+          </li>
 
           <li>
           <NavLink to={'/Blog'}
