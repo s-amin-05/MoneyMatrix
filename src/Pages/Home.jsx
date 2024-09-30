@@ -1,3 +1,4 @@
+
 import React from 'react';
 
 const cardsData = [
@@ -18,7 +19,7 @@ const cardsData = [
   },
 ];
 
-const Cards = () => {
+const Home = () => {
   return (
     <>
       <div className="min-h-screen bg-gradient-to-b from-[#43b0f1] to-[#e8eef1] flex items-center justify-between p-12 text-white">
@@ -71,4 +72,5 @@ const Cards = () => {
   );
 };
 
-export default Cards;
+export default Home;
+
