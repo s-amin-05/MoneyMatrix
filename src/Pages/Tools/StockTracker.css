@@ -1,0 +1,21 @@
+.stock-profile {
+  border: 1px solid #ddd;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+}
+
+.stock-profile h1 {
+  font-size: 24px;
+  color: #333;
+}
+
+.stock-profile p {
+  font-size: 18px;
+  color: #555;
+}
+
+.stock-profile img {
+  margin-top: 10px;
+}
