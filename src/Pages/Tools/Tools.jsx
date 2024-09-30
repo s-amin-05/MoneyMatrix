@@ -6,10 +6,10 @@ import CurrencyConverter from './CurrencyConverter'
 function Tools() {
     return (
         <>
-            {/* <RetirementCalculator />
+            <RetirementCalculator />
             <EMICalculator />
-            <CurrencyConverter /> */}
-            Tools
+            <CurrencyConverter />
+        
         </>
     )
 }
