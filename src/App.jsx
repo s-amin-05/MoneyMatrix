@@ -12,8 +12,9 @@ function App() {
         <Navbar />
         <CurrencyConverter />
         <Outlet />
+
     </>
-  )
+  );
 }
 
-export default App
+export default App;
