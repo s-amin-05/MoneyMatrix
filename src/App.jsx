@@ -1,15 +1,20 @@
-import React from "react";
-import "./App.css";
-import BudgetSim from "./Pages/Learn/BudgetSim";
-import EMICalculator from "./Pages/Tools/EMICalculator"
-import RetirementCalculator from "./Pages/Tools/RetirementCalculator";
+
+import './App.css'
+import Navbar from './Components/Navbar'
+import { Outlet } from 'react-router-dom'
+import CurrencyConverter from './Pages/Tools/CurrencyConverter'
+
+
 function App() {
+  
+
   return (
     <>
-      {/* <BudgetSim/> */}
-      <EMICalculator />
-      <RetirementCalculator/>
-      
+
+        <Navbar />
+        <CurrencyConverter />
+        <Outlet />
+
     </>
   );
 }
