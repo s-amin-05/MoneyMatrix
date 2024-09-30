@@ -11,18 +11,17 @@ const sitStat = [
   "Upon waking up, you discover the fridge has ceased functioning, leaving your food at risk of spoiling. The repair cost would be around Rs. 5000. What will you do?",
 ];
 
-
 const sitOpt = [
   "Save", // For saving plan
-  "Save", // For bonus paycheck
-  "Sell", // For stocks
+  "Invest", // For bonus paycheck
+  "Hold", // For stock price fluctuations
   "Trade", // For trading stocks
   "Pay", // For small business during COVID
-  "Sell", // For selling the car
+  "Sell", // For selling the car or refinancing the mortgage
   "Repair", // For fridge repair
 ];
 
-const BudgetSim = () => {
+const BudgetSim = ({ onQuit }) => {
   const [i, setI] = useState(0);
   const [income, setIncome] = useState(30000);
   const [expenses] = useState(21000);
@@ -34,13 +33,25 @@ const BudgetSim = () => {
   const [gameOver, setGameOver] = useState(false);
 
   const updateCost = (check) => {
-    if (check === "Repair") {
+    if (check === "Save") {
+      setIncome((prev) => prev + 2500); // Increment savings
+    } else if (check === "Invest") {
+      setIncome((prev) => prev + 10000); // Add bonus paycheck
+    } else if (check === "Hold") {
+      setAssets((prev) => prev + 5000); // Stock value increased
+    } else if (check === "Trade") {
+      setIncome((prev) => prev + 3000); // Monthly trading income
+    } else if (check === "Pay") {
+      setLiabilities((prev) => prev - 50000); // Pay liabilities for small business
+    } else if (check === "Sell") {
+      setAssets((prev) => prev + 150000); // Sell car, increase assets
+    } else if (check === "Repair") {
       setIncome((prev) => prev - 5000); // Deduct Rs. 5000 for repair
     } else if (check === "Borrow") {
       const newIncome = borrowMoneyFunc();
       setIncome(newIncome);
     }
-    setPayday(income - expenses);
+    setPayday(income - expenses); // Recalculate payday after income changes
     callNext();
   };
 
@@ -67,7 +78,7 @@ const BudgetSim = () => {
   return (
     <div className="budget-sim-container">
       <div className="content-wrapper">
-        {/* Left Panel - Parent Card containing Income, Assets, and Liabilities */}
+        {/* Left Panel - Income, Assets, and Liabilities */}
         <div className="left-card">
           <div className="income">
             <h3>Income</h3>
@@ -87,11 +98,11 @@ const BudgetSim = () => {
             <h3>Liabilities</h3>
             <p>Mortgage: Rs. 0</p>
             <p>Loans: Rs. 300000</p>
-            <p>Other: Rs. 60000</p>
+            <p>Other: Rs. {liabilities}</p>
           </div>
         </div>
 
-        {/* Center Panel - Situation Description and Income Statement */}
+        {/* Center Panel - Situation Description */}
         <div className="center-situation">
           <div className="situation">
             <h2>Income Statement</h2>
@@ -99,12 +110,14 @@ const BudgetSim = () => {
           </div>
         </div>
 
-        {/* Right Panel - Buttons centered vertically */}
+        {/* Right Panel - Buttons */}
         <div className="right-panel">
           <div className="options">
-            <button onClick={() => updateCost("Repair")}>{sitOpt[i]}</button>
+            <button onClick={() => updateCost(sitOpt[i])}>{sitOpt[i]}</button>
             <button onClick={() => callNext()}>Pass</button>
             <button onClick={() => setModalVisible(true)}>Borrow</button>
+            {/* Quit Button */}
+            <button onClick={onQuit}>Quit</button>
           </div>
         </div>
       </div>
