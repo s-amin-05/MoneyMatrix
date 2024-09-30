@@ -1,0 +1,75 @@
+#root{
+    margin: 0;
+    padding: 0;
+    
+}
+
+.memory-game {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    width: 100%;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+.card-grid {
+    
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    width: 100%; /* Ensure grid takes full width */
+    max-width: 400px; 
+    margin: 0 auto;
+    place-items: center;
+}
+
+.card {
+    position: relative;
+    right: 50%;
+    bottom: 50%;
+    width: 100px;
+    height: 100px;
+    /* perspective: 1000px; */
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.card .flipped .front {
+    transform: rotateY(0deg);
+}
+
+.card .flipped .back {
+    transform: rotateY(180deg);
+}
+
+.card .front,
+.card .back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    color: white;
+    transition: transform 0.6s;
+}
+
+.card .front {
+    background: #333;
+    transform: rotateY(180deg);
+}
+
+.card .back {
+    background: #555;
+    transform: rotateY(0deg);
+}
