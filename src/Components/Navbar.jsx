@@ -1,13 +1,12 @@
 import React from 'react'
 import { Link, NavLink } from 'react-router-dom'
 
-
 function Navbar() {
   
   return (
-      <div className={`mt-0 bg-[#43b0f1] flex items-center justify-around text-white h-14 w-screen drop-shadow-md`} 
+      <div className={`mt-0 bg-[#14a9ff] flex items-center justify-around text-blue-950 h-14 w-screen drop-shadow-md`} 
       >
-        <div className='flex'>
+        <div className='flex font-bold text-xl'>
             MoneyMatrix
         </div>
         
@@ -17,7 +16,7 @@ function Navbar() {
           <li className='flex items-center justify-center'>
             <NavLink to={'/'} 
               className={({isActive})=>(
-              `${isActive? `text-blue-500`: `text-white`} flex items-center justify-center`
+              `${isActive? `text-blue-950`: `text-white`} flex items-center justify-center`
               )}>
               Home🏠
             </NavLink>
@@ -26,7 +25,7 @@ function Navbar() {
           <li> 
           <NavLink to={'/Tools'}
           className={({isActive})=>(
-            `${isActive? `text-contrastColor`: `text-white`}`
+            `${isActive? `text-blue-950`: `text-white`}`
             )}>
               Tools🔧
 
@@ -37,7 +36,7 @@ function Navbar() {
           <li>
           <NavLink to={'/Learn'}
           className={({isActive})=>(
-            `${isActive? `text-contrastColor`: `text-white`}`
+            `${isActive? `text-blue-950`: `text-white`}`
             )}>
               Learn📖
           </NavLink>
@@ -45,7 +44,7 @@ function Navbar() {
           <li>
             <NavLink to={'/Modules'} 
               className={({isActive})=>(
-              `${isActive? `text-contrastColor`: `text-white`}`
+              `${isActive? `text-blue-950`: `text-white`}`
               )}>
               Modules🛣
 
@@ -55,7 +54,7 @@ function Navbar() {
           <li>
           <NavLink to={'/Blogs'}
           className={({isActive})=>(
-            `${isActive? `text-contrastColor`: `text-white`}`
+            `${isActive? `text-blue-950`: `text-white`}`
             )}
           >
               Blogs📰
@@ -66,7 +65,7 @@ function Navbar() {
         </ul>
 
         <Link className='text-white'>
-            User Icon
+            User 
         </Link>
       </div>
     
