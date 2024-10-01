@@ -6,7 +6,7 @@ const FinancialEducationRoadmap = () => {
             step: 1,
             title: "Understanding Basic Personal Finance",
             description: "Budgeting: Learn how to create a budget that tracks your income and expenses. Budgeting ensures you're not overspending and helps you save money each month.",
-            videoUrl: "https://www.youtube.com/embed/your-video-id-1", // Replace with actual video ID
+            videoUrl: "https://www.youtube.com/embed/UcAY6qRHlw0?si=bfylj-58LsaJ_gbt", // Replace with actual video ID
             quiz: [
                 {
                     question: "What is the primary purpose of budgeting?",
@@ -34,7 +34,7 @@ const FinancialEducationRoadmap = () => {
             step: 2,
             title: "Debt Management",
             description: "Understand different types of debt, how credit scores work, and best practices for managing loans and credit card balances.",
-            videoUrl: "https://www.youtube.com/embed/your-video-id-2", // Replace with actual video ID
+            videoUrl: "https://www.youtube.com/embed/B5nDFRFSHkc?si=XWPoz27rB6efeR3Y", // Replace with actual video ID
             quiz: [
                 {
                     question: "What is a credit score?",
@@ -62,7 +62,7 @@ const FinancialEducationRoadmap = () => {
             step: 3,
             title: "Investing Basics",
             description: "Get familiar with investment options like stocks, bonds, mutual funds, and ETFs. Learn the risks and rewards of investing.",
-            videoUrl: "https://www.youtube.com/embed/your-video-id-3", // Replace with actual video ID
+            videoUrl: "https://www.youtube.com/embed/qIw-yFC-HNU?si=VplcPicKpe9jZdqz", // Replace with actual video ID
             quiz: [
                 {
                     question: "What is a stock?",
@@ -90,7 +90,7 @@ const FinancialEducationRoadmap = () => {
             step: 4,
             title: "Advanced Investment Strategies",
             description: "Explore more complex strategies like real estate investing, retirement accounts (401k, IRAs), and portfolio diversification.",
-            videoUrl: "https://www.youtube.com/embed/your-video-id-4", // Replace with actual video ID
+            videoUrl: "https://www.youtube.com/embed/WWr_K0kfrz0?si=SXZYqab1m7bgVCh9", // Replace with actual video ID
             quiz: [
                 {
                     question: "What is a 401(k)?",
@@ -118,7 +118,7 @@ const FinancialEducationRoadmap = () => {
             step: 5,
             title: "Tax Planning and Wealth Building",
             description: "Learn how to reduce your tax burden and plan for long-term wealth. Understand tax-advantaged accounts, tax deductions, and credits.",
-            videoUrl: "https://www.youtube.com/embed/your-video-id-5", // Replace with actual video ID
+            videoUrl: "https://www.youtube.com/embed/Aub-oMN9q-k?si=gc8JI7zNE-flSPA8", // Replace with actual video ID
             quiz: [
                 {
                     question: "What is a tax deduction?",
@@ -146,7 +146,7 @@ const FinancialEducationRoadmap = () => {
             step: 6,
             title: "Retirement Planning",
             description: "Discover how to create a retirement plan, understand pensions, Social Security, and how to maximize retirement savings accounts.",
-            videoUrl: "https://www.youtube.com/embed/your-video-id-6", // Replace with actual video ID
+            videoUrl: "https://www.youtube.com/embed/JxdUWsudi6g?si=lgxNTCZ7Q-5c8rou", // Replace with actual video ID
             quiz: [
                 {
                     question: "What is Social Security?",
@@ -174,7 +174,7 @@ const FinancialEducationRoadmap = () => {
             step: 7,
             title: "Estate Planning and Wealth Transfer",
             description: "Plan for the transfer of wealth through wills, trusts, and estate plans. Understand how to protect your assets and reduce estate taxes.",
-            videoUrl: "https://www.youtube.com/embed/your-video-id-7", // Replace with actual video ID
+            videoUrl: "https://www.youtube.com/embed/xuuqtFPqIxo?si=wZyCxrifpkPgE355", // Replace with actual video ID
             quiz: [
                 {
                     question: "What is a will?",
