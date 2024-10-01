@@ -112,7 +112,7 @@ function MemoryGame() {
         />
         <label htmlFor="investing">Investing</label>
       </form>
-      <div className="card-grid">
+      <div className="card-grid ">
         {cards.map((card) => (
           <Card
             key={card.id}
@@ -139,7 +139,7 @@ function Card({ card, handleChoice, flipped, disabled }) {
   return (
     <div className="card" onClick={handleClick}>
       <div className={flipped ? "flipped" : ""}>
-        <div className="front">{card.text}</div>
+        <div className="front flex text-center p-5">{card.text}</div>
         <div className="back"></div>
       </div>
     </div>

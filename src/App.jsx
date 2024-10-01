@@ -1,17 +1,24 @@
 import "./App.css";
 import Navbar from "./Components/Navbar";
 import { Outlet } from "react-router-dom";
+
 import Learn from "./Pages/Learn/Learn";
-import StockGraph from "./Pages/Learn/StockGraph";
-import StockMarketSimulation from "./Pages/Learn/StockMarketSimulation";
+
+import { useState } from "react";
+
+
+
 
 function App() {
+
   return (
     <>
-      <Navbar />
-      {/* <Learn /> */}
-      <StockMarketSimulation />
-      <Outlet />
+      
+        <Navbar />
+        <Outlet />
+        
+       
+
     </>
   );
 }

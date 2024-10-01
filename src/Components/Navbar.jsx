@@ -41,6 +41,15 @@ function Navbar() {
           </NavLink>
           </li>
 
+          <li>
+          <NavLink to={'/Blog'}
+          className={({isActive})=>(
+            `${isActive? `text-contrastColor`: `text-white`}`
+            )}>
+              Blog
+          </NavLink>
+          </li>
+
         </ul>
 
         <Link className='text-white'>
