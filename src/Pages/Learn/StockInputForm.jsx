@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./StockInputForm.css"; // Import the updated CSS file
+import { Link } from "react-router-dom";
 
 const StockInputForm = ({ onCompare }) => {
   const [symbol1, setSymbol1] = useState("");
@@ -12,10 +13,10 @@ const StockInputForm = ({ onCompare }) => {
   };
 
   return (
-    <div className="input-container">
+    <div className="input-container ">
       <h2>Stock Market Comparison</h2>
       <p>Enter the stock symbols to compare</p>
-      <form onSubmit={handleSubmit}>
+      <form onSubmit={handleSubmit} className="h-full">
         <input
           type="text"
           className="input-field"
@@ -45,6 +46,12 @@ const StockInputForm = ({ onCompare }) => {
         <button type="submit" className="compare-btn">
           Compare
         </button>
+
+        <Link to={'../Learn'}>
+        <button type="submit" className="compare-btn">
+          Back
+        </button>
+        </Link>
       </form>
     </div>
   );
