@@ -1,6 +1,6 @@
 /* Global Body Styling */
 body {
-  background-color: #e8eef1;
+  /* background-color: #e8eef1; */
   font-family: Arial, sans-serif;
   font-size: 1.1rem;
   font-weight: 600;
@@ -16,7 +16,7 @@ body {
   align-items: center;
   justify-content: center;
   min-height: 100vh;
-  background-color: #e8eef1;
+  /* background-color: #e8eef1; */
   text-align: center;
 }
 

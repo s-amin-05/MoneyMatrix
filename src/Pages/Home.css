@@ -1,0 +1,59 @@
+/* App.css */
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #f0f0f5;
+  }
+  
+  .hero {
+    background: linear-gradient(180deg, #43b0f1 0%, #e8eef1 100%);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+    min-height: 100vh;
+  }
+  
+  .content {
+    max-width: 600px;
+  }
+  
+  h1 {
+    font-size: 3rem;
+  }
+  
+  h2 {
+    font-size: 2rem;
+    margin-top: 10px;
+  }
+  
+  p {
+    margin: 20px 0;
+    font-size: 1.8rem;
+    
+  }
+  
+  .chat-button {
+    background-color: #1e3d58;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .chat-button:hover {
+    background-color: #1e3d58;
+  }
+  
+  .mockup img {
+    width: 800px;
+    border-radius: 15px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2);
+  }
+  p{
+    color: black;
+  }
