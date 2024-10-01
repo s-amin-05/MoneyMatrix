@@ -1,0 +1,32 @@
+.graph-container {
+  width: 45%;
+  height: 400px;
+  background-color: #bfdff1;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  margin: 20px; /* Adds space around each card */
+}
+
+.graph-title {
+  font-size: 1.8rem;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.canvas {
+  height: 100% !important;
+}
+
+.chart-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px; /* Adds space between the chart cards */
+  margin-bottom: 20px;
+}
+
+.compare-button {
+  text-align: center;
+  margin-top: 20px;
+}

@@ -1,0 +1,73 @@
+/* Global Body Styling */
+body {
+  /* background-color: #e8eef1; */
+  font-family: Arial, sans-serif;
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+/* Games Page Styling */
+.games-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  /* background-color: #e8eef1; */
+  text-align: center;
+}
+
+.games-page h1 {
+  font-size: 2.5rem;
+  color: #1e3d58;
+  margin-bottom: 2rem;
+}
+
+/* Card container */
+.card-container {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: stretch; /* Make sure cards stretch to the same height */
+  flex-wrap: wrap;
+}
+
+/* Game Card Styling */
+.game-card {
+  background-color: #abd7f1;
+  border: 1px solid #96cff1;
+  border-radius: 10px;
+  padding: 2rem;
+  width: 250px; /* Set a fixed width for both cards */
+  height: 300px; /* Set a fixed height for both cards */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Ensure even spacing between elements inside the card */
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.game-card:hover {
+  background-color: #96cff1;
+  transform: translateY(-5px); /* Slight lift effect */
+}
+
+.game-card h2 {
+  color: #1e3d58;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.game-card p {
+  color: #1e3d58;
+  font-size: 1rem;
+  flex-grow: 1; /* Ensures that the text grows evenly inside the card */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

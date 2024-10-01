@@ -7,20 +7,21 @@ const RetirementCalculator = () => {
     const [monthlyContribution, setMonthlyContribution] = useState('');
     const [annualReturn, setAnnualReturn] = useState('');
     const [desiredIncome, setDesiredIncome] = useState('');
+    const [monthlyExpenditure, setMonthlyExpenditure] = useState(''); // New state for monthly expenditure
     const [results, setResults] = useState(null);
 
     const handleSubmit = (e) => {
         e.preventDefault();
         // Calculation logic here
         const totalSavingsAtRetirement = currentSavings * (1 + (annualReturn / 100)) ** (retirementAge - currentAge);
-        const monthlyIncome = (totalSavingsAtRetirement / (retirementAge - currentAge) / 12);
-        const shortfall = desiredIncome - monthlyIncome;
+        const monthlyIncome = (totalSavingsAtRetirement / ((retirementAge - currentAge) * 12));
+        const shortfall = desiredIncome - (monthlyIncome - monthlyExpenditure); // Adjusted calculation for shortfall
         setResults({ totalSavingsAtRetirement, monthlyIncome, shortfall });
     };
 
     return (
         <div className="mt-20 max-w-xl mx-auto bg-[#96cff1] p-5 rounded-lg shadow-md">
-            <h1 className="text-3xl font-semibold text-left text-">Retirement Strategy Calculator</h1>
+            <h1 className="text-3xl font-semibold text-left">Retirement Strategy Calculator</h1>
             <form onSubmit={handleSubmit} className="mt-5">
                 <label className="block text-gray-700 mb-2 font-bold">Current Age:</label>
                 <input
@@ -43,11 +44,18 @@ const RetirementCalculator = () => {
                     onChange={(e) => setCurrentSavings(e.target.value)}
                     className="mb-4 p-2 rounded border border-gray-300 font-bold w-full p-3 mt-1 mb-4 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring focus:ring-[#1e3d58]"
                 />
-                <label className="block text-gray-700 mb-2 font-bold">Monthly Contribution (₹):</label>
+                <label className="block text-gray-700 mb-2 font-bold">Monthly Income (₹):</label>
                 <input
                     type="number"
                     value={monthlyContribution}
                     onChange={(e) => setMonthlyContribution(e.target.value)}
+                    className="mb-4 p-2 rounded border border-gray-300 font-bold w-full p-3 mt-1 mb-4 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring focus:ring-[#1e3d58]"
+                />
+                <label className="block text-gray-700 mb-2 font-bold">Monthly Expenditure (₹):</label>
+                <input
+                    type="number"
+                    value={monthlyExpenditure}
+                    onChange={(e) => setMonthlyExpenditure(e.target.value)}
                     className="mb-4 p-2 rounded border border-gray-300 font-bold w-full p-3 mt-1 mb-4 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring focus:ring-[#1e3d58]"
                 />
                 <label className="block text-gray-700 mb-2 font-bold">Expected Annual Return Rate (%):</label>
@@ -64,6 +72,7 @@ const RetirementCalculator = () => {
                     onChange={(e) => setDesiredIncome(e.target.value)}
                     className="mb-4 p-2 rounded border border-gray-300 font-bold w-full p-3 mt-1 mb-4 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring focus:ring-[#1e3d58]"
                 />
+                
                 <button 
                     type="submit" 
                     className="mb-4 p-2 rounded border border-gray-300 font-bold w-full p-3 mt-5 bg-[#1e3d58] text-white rounded-lg hover:bg-[#0f2c3e] focus:outline-none">
