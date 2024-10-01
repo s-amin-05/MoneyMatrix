@@ -13,7 +13,7 @@ const RetirementCalculator = () => {
     const handleSubmit = (e) => {
         e.preventDefault();
         // Calculation logic here
-        const totalSavingsAtRetirement = currentSavings * (1 + (annualReturn / 100)) ** (retirementAge - currentAge);
+        const totalSavingsAtRetirement = currentSavings + (monthlyContribution - monthlyExpenditure) * 12 * annualReturn;
         const monthlyIncome = (totalSavingsAtRetirement / ((retirementAge - currentAge) * 12));
         const shortfall = desiredIncome - (monthlyIncome - monthlyExpenditure); // Adjusted calculation for shortfall
         setResults({ totalSavingsAtRetirement, monthlyIncome, shortfall });
@@ -83,7 +83,7 @@ const RetirementCalculator = () => {
             {results && (
                 <div className="results mt-6 bg-white p-4 rounded shadow">
                     <h2 className="block text-gray-700 mb-2 font-bold">Results:</h2>
-                    <p className='block text-[#1e3d58]-700 mb-2 font-semibold'>Total Savings at Retirement: ₹{results.totalSavingsAtRetirement.toFixed(2)}</p>
+                    <p className='block text-[#1e3d58]-700 mb-2 font-semibold'>Total Savings at Retirement: ₹{results.totalSavingsAtRetirement }</p>
                     <p className='block text-[#1e3d58]-700 mb-2 font-semibold'>Monthly Income During Retirement: ₹{results.monthlyIncome.toFixed(2)}</p>
                     <p className='block text-[#1e3d58]-700 mb-2 font-semibold'>Shortfall/Surplus: ₹{results.shortfall.toFixed(2)}</p>
                 </div>

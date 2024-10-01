@@ -22,10 +22,11 @@ const InvestmentCalculator = () => {
     const suggestedInvestment = monthlySalary * investmentPercentage;
 
     // Calculate future value of the investment using compound interest formula
-    const futureValue =
-      suggestedInvestment *
-      ((Math.pow(1 + annualReturnRate, years) - 1) / annualReturnRate);
+    // const futureValue =
+    //   suggestedInvestment *
+    //   ((Math.pow(1 + annualReturnRate, years) - 1) / annualReturnRate);
 
+    const futureValue = suggestedInvestment * investmentRate;
     setResults({
       suggestedSavings: suggestedSavings.toFixed(2),
       suggestedInvestment: suggestedInvestment.toFixed(2),
@@ -99,10 +100,10 @@ const InvestmentCalculator = () => {
         <div className="results mt-6 bg-white p-4 rounded shadow">
           <h2 className="block text-gray-700 mb-2 font-bold">Results:</h2>
           <h3 className="block text-[#1e3d58]-700 mb-2 font-semibold">
-            Suggested Savings Amount: ₹{results.suggestedSavings}
+            Total Savings Amount: ₹{results.suggestedSavings * 12}
           </h3>
           <h3 className="block text-[#1e3d58]-700 mb-2 font-semibold">
-            Suggested Investment Amount: ₹{results.suggestedInvestment}
+            Total Investment Amount: ₹{results.suggestedInvestment * 12}
           </h3>
           <h3 className="block text-[#1e3d58]-700 mb-2 font-semibold">
             Future Value of Investment After {investmentYears} Years: ₹{results.futureValue}
