@@ -7,8 +7,17 @@ function CurrencyConverter() {
   const [to, setTo] = useState("inr");
   const [convertedAmount, setConvertedAmount] = useState(0);
 
-  const currencyInfo = useCurrencyInfo(from);
-  const options = Object.keys(currencyInfo);
+
+
+    const [amount, setAmount] = useState(0)
+  const [from, setFrom] = useState("usd")
+  const [to, setTo] = useState("inr")
+  const [convertedAmount, setConvertedAmount] = useState(0)
+
+  const currencyInfo = useCurrencyInfo(from)
+
+  const options = Object.keys(currencyInfo)
+  
 
   const swap = () => {
     setFrom(to);
@@ -82,6 +91,7 @@ function CurrencyConverter() {
 }
 
 function InputBox({
+
   label,
   amount,
   onAmountChange,
@@ -133,5 +143,6 @@ function InputBox({
     </div>
   );
 }
+
 
 export default CurrencyConverter;

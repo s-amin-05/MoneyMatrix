@@ -48,21 +48,21 @@ const BudgetSim = ({ onQuit }) => {
     } else if (check === "Repair") {
       setIncome((prev) => prev - 5000); // Deduct Rs. 5000 for repair
     } else if (check === "Borrow") {
-      const newIncome = borrowMoneyFunc();
-      setIncome(newIncome);
+    //   const newIncome = borrowMoneyFunc();
+    //   setIncome(newIncome);
+        setLiabilities((prev) => prev + Number(borrowedAmount));
     }
     setPayday(income - expenses); // Recalculate payday after income changes
     callNext();
   };
 
   const borrowMoneyFunc = () => {
-    if (!borrowedAmount) {
-      alert("Please enter an amount to borrow");
-      return income;
-    }
-    const temp = Number(income) + Number(borrowedAmount);
+    
+    const temp = Number(borrowedAmount);
+    setLiabilities((prev) => prev + temp);
     setModalVisible(false);
-    return temp;
+    callNext()
+    
   };
 
   const callNext = () => {
