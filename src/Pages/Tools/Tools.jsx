@@ -7,10 +7,10 @@ import Investment from './Invesment'
 function Tools() {
     return (
         <>
+            <Investment/>
             <RetirementCalculator />
             <EMICalculator />
             {/* <CurrencyConverter /> */}
-            <Investment/>
             
         </>
     )

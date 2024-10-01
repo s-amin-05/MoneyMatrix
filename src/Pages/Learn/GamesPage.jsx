@@ -10,7 +10,7 @@ const GamesPage = ({ onSelectGame }) => {
         {/* Card for "Rule the Board" */}
         <Link to={'BudgetSim'}>
             <div className="game-card" onClick={() => onSelectGame("ruleTheBoard")}>
-            <h2>Rule the Board</h2>
+            <h2>Budget Sim</h2>
             <p>Manage your finances and make strategic decisions to succeed!</p>
         </div>
         </Link>
@@ -20,6 +20,14 @@ const GamesPage = ({ onSelectGame }) => {
         <Link to={'MemoryGame'}>
             <div className="game-card" onClick={() => onSelectGame("memoryGame")}>
             <h2>Memory Card Game</h2>
+            <p>Test your memory by matching the cards!</p>
+            </div>
+        </Link>
+
+        {/* Card for "Memory Game" */}
+        <Link to={'Stock'}>
+            <div className="game-card" onClick={() => onSelectGame("memoryGame")}>
+            <h2>Stock Market Data</h2>
             <p>Test your memory by matching the cards!</p>
             </div>
         </Link>

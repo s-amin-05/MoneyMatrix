@@ -1,21 +1,23 @@
 import React from "react";
+
 import { Link } from "react-router-dom";
+import CommunityPage from "./Community/CommunityPage";
 
 const cardsData = [
   {
     title: "How to deal with Unknown Risks in Life and Investing?",
     image: "./src/assets/card_img1.avif",
-    link: "/Page1",
+    link: "Page1",
   },
   {
     title: "How to 10x your Generational Wealth?",
     image: "./src/assets/cards_img2.jpg",
-    link: "/Page2",
+    link: "Page2",
   },
   {
     title: "Investing with Minimal Savings: A Guide for Women",
     image: "./src/assets/card_img3.jpeg",
-    link: "/Page3",
+    link: "Page3",
   },
   {
     title: "Understanding Stock Market Basics",
@@ -70,12 +72,12 @@ const Cards = () => {
             <h3 className="text-lg font-semibold text-gray-700 mt-4">
               {card.title}
             </h3>
-            <a
-              href={card.link}
+            <Link
+              to={card.link}
               className="inline-block mt-3 text-[#43b0f1] font-bold hover:text-[#1e3d58] transition-colors"
             >
               Learn More &rarr;
-            </a>
+            </Link>
           </div>
         ))}
       </div>
@@ -83,4 +85,13 @@ const Cards = () => {
   );
 };
 
-export default Cards;
+const Blogs = () => {
+  return (
+    <div>
+        <CommunityPage />
+        <Cards />
+    </div>
+  );
+};
+
+export default Blogs;

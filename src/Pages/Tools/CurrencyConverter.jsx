@@ -9,10 +9,7 @@ function CurrencyConverter() {
 
 
 
-    const [amount, setAmount] = useState(0)
-  const [from, setFrom] = useState("usd")
-  const [to, setTo] = useState("inr")
-  const [convertedAmount, setConvertedAmount] = useState(0)
+    
 
   const currencyInfo = useCurrencyInfo(from)
 
@@ -31,7 +28,7 @@ function CurrencyConverter() {
   };
 
   return (
-    <div className="flex items-center h-auto h-screen bg-[#e8eef1]">
+    <div className="flex items-center h-auto bg-[#e8eef1]">
       <div className="bg-[#96cff1] w-full  max-w-xl mx-auto p-8 rounded-xl shadow-lg">
         <h1 className="text-2xl font-bold text-center mb-6 text-gray-800">
           Currency Converter

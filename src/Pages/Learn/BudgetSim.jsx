@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./BudgetSim.css"; // Make sure to customize your CSS here
+import {Link } from "react-router-dom";
 
 const sitStat = [
   "You've started a new job and want to start saving for future goals. You decide to set up a savings plan. Save Rs.2500/month",
@@ -117,7 +118,10 @@ const BudgetSim = ({ onQuit }) => {
             <button onClick={() => callNext()}>Pass</button>
             <button onClick={() => setModalVisible(true)}>Borrow</button>
             {/* Quit Button */}
+            <Link to={'../Learn'}>
             <button onClick={onQuit}>Quit</button>
+
+            </Link>
           </div>
         </div>
       </div>
@@ -144,7 +148,10 @@ const BudgetSim = ({ onQuit }) => {
         <div className="game_over">
           <div className="game_over_content">
             <h2>Game Over!</h2>
-            <button onClick={() => window.location.reload()}>Restart</button>
+            <Link to={'../Learn'}>
+
+            <button >Restart</button>
+            </Link>
           </div>
         </div>
       )}

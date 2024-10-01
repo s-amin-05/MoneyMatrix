@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./MemoryGame.css"; // Import CSS for styling
+import { Link } from "react-router-dom";
 
 function MemoryGame() {
   const [cards, setCards] = useState([]);
@@ -125,6 +126,10 @@ function MemoryGame() {
           />
         ))}
       </div>
+        <Link to={'../Learn'} className="h-8">
+            <button >Quit</button>
+
+        </Link>
     </div>
   );
 }

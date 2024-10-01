@@ -1,5 +1,5 @@
 import React from 'react'
-import FinancialEducationRoadmap from './Tools/Financial'
+import FinancialEducationRoadmap from './Financial'
 
 function Modules() {
     return (

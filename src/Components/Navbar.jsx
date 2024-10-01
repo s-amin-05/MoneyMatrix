@@ -5,19 +5,19 @@ import { Link, NavLink } from 'react-router-dom'
 function Navbar() {
   
   return (
-      <div className={`mt-0 bg-[#43b0f1] flex items-center justify-around text-white h-14 overflow-hidden w-screen`} 
+      <div className={`mt-0 bg-[#43b0f1] flex items-center justify-around text-white h-14 w-screen`} 
       >
         <div className='flex'>
-            Logo 
+            MoneyMatrix
         </div>
         
 
-        <ul className='flex w-2/4 justify-center gap-20 flex-wrap'>
+        <ul className='flex justify-center gap-12 '>
         
-          <li>
+          <li className='flex items-center justify-center'>
             <NavLink to={'/'} 
               className={({isActive})=>(
-              `${isActive? `text-contrastColor`: `text-white`}`
+              `${isActive? `text-blue-500`: `text-white`} flex items-center justify-center`
               )}>
               Home🏠
             </NavLink>
@@ -53,11 +53,12 @@ function Navbar() {
           </li>
 
           <li>
-          <NavLink to={'/Blog'}
+          <NavLink to={'/Blogs'}
           className={({isActive})=>(
             `${isActive? `text-contrastColor`: `text-white`}`
-            )}>
-              Blog📰
+            )}
+          >
+              Blogs📰
 
           </NavLink>
           </li>
