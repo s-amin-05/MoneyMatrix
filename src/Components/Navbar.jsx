@@ -5,7 +5,7 @@ import { Link, NavLink } from 'react-router-dom'
 function Navbar() {
   
   return (
-      <div className={`mt-0 bg-[#43b0f1] flex items-center justify-around text-white h-14 w-screen`} 
+      <div className={`mt-0 bg-[#43b0f1] flex items-center justify-around text-white h-14 w-screen drop-shadow-md`} 
       >
         <div className='flex'>
             MoneyMatrix

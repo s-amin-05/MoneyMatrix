@@ -28,8 +28,8 @@ function CurrencyConverter() {
   };
 
   return (
-    <div className="flex items-center h-auto bg-[#e8eef1]">
-      <div className="bg-[#96cff1] w-full  max-w-xl mx-auto p-8 rounded-xl shadow-lg">
+    <div className="flex items-center w-auto  mb-20">
+      <div className="bg-[#96cff1] mx-auto p-8 rounded-xl shadow-lg">
         <h1 className="text-2xl font-bold text-center mb-6 text-gray-800">
           Currency Converter
         </h1>
@@ -102,17 +102,17 @@ function InputBox({
   const amountInputId = useId();
 
   return (
-    <div className={`bg-white p-3 rounded-lg flex ${className}`}>
-      <div className="w-auto">
+    <div className={`bg-white p-3 rounded-lg flex items-center justify-center ${className}`}>
+      <div className="w-auto mr-2">
         <label
           htmlFor={amountInputId}
-          className="block text-gray-700 mb-2 font-medium"
+          className="block text-gray-700 mb-2 font-medium mr-4"
         >
           {label}
         </label>
         <input
           id={amountInputId}
-          className="outline-none w-full border border-gray-300 p-2 rounded-md"
+          className="outline-none w-full border border-gray-300 h-10 pl-2 rounded-md"
           type="number"
           placeholder="Amount"
           disabled={amountDisable}
@@ -120,8 +120,8 @@ function InputBox({
           onInput={(e) => onAmountChange(Number(e.target.value))}
         />
       </div>
-      <div className="w-full mt-4">
-        <label className="block text-gray-700 mb-2 font-medium">
+      <div className="w-full ">
+        <label className="block text-gray-700 mb-2 font-medium mr-4">
           Currency Type
         </label>
         <select

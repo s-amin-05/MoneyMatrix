@@ -1,28 +1,28 @@
-
+import {Link} from 'react-router-dom';
 import React from 'react';
 
 const cardsData = [
   {
     title: 'Financial Blogs',
     image: './src/assets/img1.png',
-    link: '#',
+    link: 'Blogs',
   },
   {
     title: 'Finance Tools',
     image: './src/assets/img2.png',
-    link: '#',
+    link: 'Tools',
   },
   {
     title: 'Financial Quizes/Challenges',
     image: './src/assets/img3.png',
-    link: '#',
+    link: 'Learn',
   },
 ];
 
 const Home = () => {
   return (
-    <>
-      <div className="min-h-screen bg-gradient-to-b  flex items-center justify-between p-12 text-white">
+    <div className='mb-20'>
+      <div className="min-h-screen bg-gradient-to-b  flex items-center justify-between p-12  text-white">
         {/* Hero Section */}
         <section className="max-w-lg">
           <h1 className="text-5xl font-bold">Say 👋 to MoneyMatrix</h1>
@@ -32,9 +32,12 @@ const Home = () => {
               Explore a range of financial products tailored to your needs.
             </p>
           </section>
+          <Link to={'Modules'}>
           <button className="mt-6 bg-[#1e3d58] hover:bg-[#183446] text-white py-3 px-8 rounded-lg text-lg">
             Get Started ➨
           </button>
+          </Link>
+          
         </section>
 
         {/* Mockup Image */}
@@ -59,16 +62,16 @@ const Home = () => {
               className="w-full h-40 object-contain rounded-md"
             />
             <h3 className="text-lg font-bold text-gray-700 mt-4">{card.title}</h3>
-            <a
-              href={card.link}
+            <Link
+              to={card.link}
               className="inline-block mt-3 text-[#057dcd] font-bold hover:text-[#057dcd] transition-colors"
             >
               Learn More &rarr;
-            </a>
+            </Link>
           </div>
         ))}
       </div>
-    </>
+    </div>
   );
 };
 

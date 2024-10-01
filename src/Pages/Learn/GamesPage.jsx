@@ -27,8 +27,8 @@ const GamesPage = ({ onSelectGame }) => {
         {/* Card for "Memory Game" */}
         <Link to={'Stock'}>
             <div className="game-card" onClick={() => onSelectGame("memoryGame")}>
-            <h2>Stock Market Data</h2>
-            <p>Test your memory by matching the cards!</p>
+            <h2>Stock Market</h2>
+            <p>Powerful for interactive stock graphs with realtime updates</p>
             </div>
         </Link>
 
