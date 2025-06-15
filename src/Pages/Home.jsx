@@ -4,17 +4,17 @@ import React from 'react';
 const cardsData = [
   {
     title: 'Financial Blogs',
-    image: './src/assets/img1.png',
+    image: 'img1.png',
     link: 'Blogs',
   },
   {
     title: 'Finance Tools',
-    image: './src/assets/img2.png',
+    image: 'img2.png',
     link: 'Tools',
   },
   {
     title: 'Financial Quizes/Challenges',
-    image: './src/assets/img3.png',
+    image: 'img3.png',
     link: 'Learn',
   },
 ];
@@ -43,7 +43,7 @@ const Home = () => {
         {/* Mockup Image */}
         <div className="mockup">
           <img
-            src="./src/assets/img5.jpg"
+            src="img5.jpg"
             alt="Mockup of the app"
             className="w-[800px] rounded-lg shadow-lg"
           />
